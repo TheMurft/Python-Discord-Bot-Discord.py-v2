@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 import asyncio
 
-class Clear(commands.Cog, name="Moderation"):
+class Clear(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 

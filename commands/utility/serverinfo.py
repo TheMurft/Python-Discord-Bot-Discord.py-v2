@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-class ServerInfo(commands.Cog, name="Utility"):
+class ServerInfo(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 

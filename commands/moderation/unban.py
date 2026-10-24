@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-class Unban(commands.Cog, name="Moderation"):
+class Unban(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 

@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 import asyncio
 
-class Purge(commands.Cog, name="Moderation"):
+class Purge(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 

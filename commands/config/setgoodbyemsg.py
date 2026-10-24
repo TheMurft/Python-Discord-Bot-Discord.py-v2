@@ -3,7 +3,7 @@ import json
 import discord
 from discord.ext import commands
 
-class SetGoodbyeMsg(commands.Cog, name="Config"):
+class SetGoodbyeMsg(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 

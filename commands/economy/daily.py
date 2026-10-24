@@ -5,7 +5,7 @@ import datetime
 DAILY_AMOUNT = 200
 DAILY_CD_H   = 24
 
-class Daily(commands.Cog, name="Economy"):
+class Daily(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 

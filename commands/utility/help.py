@@ -8,7 +8,7 @@ CATEGORY_ICONS = {
     "Economy":    "💰",
 }
 
-class Help(commands.Cog, name="Utility"):
+class Help(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
@@ -22,7 +22,9 @@ class Help(commands.Cog, name="Utility"):
             cog_commands = [c for c in cog.get_commands() if not c.hidden]
             if not cog_commands:
                 continue
-            categories[cog_name] = cog_commands
+            module_parts = cog.__module__.split(".")
+            category_name = module_parts[1].title() if len(module_parts) > 1 else cog_name
+            categories.setdefault(category_name, []).extend(cog_commands)
 
         embed = discord.Embed(
             title="📖 Command Help",

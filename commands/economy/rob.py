@@ -5,7 +5,7 @@ import random
 
 ROB_CD_MIN = 10
 
-class Rob(commands.Cog, name="Economy"):
+class Rob(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 

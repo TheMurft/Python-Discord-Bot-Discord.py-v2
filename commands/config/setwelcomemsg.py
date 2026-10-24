@@ -3,7 +3,7 @@ import json
 import discord
 from discord.ext import commands
 
-class SetWelcomeMsg(commands.Cog, name="Config"):
+class SetWelcomeMsg(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 

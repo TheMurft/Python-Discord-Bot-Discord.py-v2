@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-class Balance(commands.Cog, name="Economy"):
+class Balance(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 

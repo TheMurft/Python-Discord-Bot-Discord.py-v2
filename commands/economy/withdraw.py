@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-class Withdraw(commands.Cog, name="Economy"):
+class Withdraw(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 

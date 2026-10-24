@@ -91,7 +91,7 @@ class CloseTicketView(discord.ui.View):
         except Exception as e:
             print("[TICKET CLOSE ERROR]", e)
 
-class SetupTicket(commands.Cog, name="Config"):
+class SetupTicket(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 

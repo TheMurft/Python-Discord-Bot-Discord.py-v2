@@ -13,7 +13,7 @@ JOBS = [
     ("Miner",              50, 130),
 ]
 
-class Work(commands.Cog, name="Economy"):
+class Work(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
